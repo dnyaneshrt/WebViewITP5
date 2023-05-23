@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context=".MainActivity">
+
+  <androidx.appcompat.widget.LinearLayoutCompat
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="0.1"
+      android:padding="5dp"
+      android:orientation="horizontal"
+      >
+      <EditText
+          android:id="@+id/et_url"
+          android:layout_width="0dp"
+          android:layout_weight="0.9"
+          android:layout_height="match_parent"
+          android:hint="enter url please:"
+          android:background="@drawable/border"
+          android:padding="16dp"
+          android:textColor="@color/black"/>
+      <ImageButton
+          android:id="@+id/btn_search"
+          android:layout_width="0dp"
+          android:layout_weight="0.1"
+          android:background="@drawable/baseline_search_24"
+          android:layout_height="match_parent"/>
+
+  </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <WebView
+        android:id="@+id/myWebView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:layout_margin="2dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_youtube"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@drawable/youtube"
+            />
+        <ImageButton
+            android:id="@+id/btn_google"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@drawable/search"
+            />
+        <ImageButton
+            android:id="@+id/btn_java"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@drawable/java"
+            />
+        <ImageButton
+            android:id="@+id/btn_sql"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@drawable/sql"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
